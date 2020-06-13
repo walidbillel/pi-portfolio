@@ -1,8 +1,140 @@
+/*---------------------------
+Reset
+ --------------------------- */
+*,
+html,
 body {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*---------------------------
+ General
+ --------------------------- */
+
+body {
+  font: 400 16px/24px 'Roboto', Helvetica, Arial, sans-serif;
+  color: rgb(0, 0, 0);
 }
 
-h1 {
-  font-size: 40px;
-  color: orange;
+a,
+img,
+i {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+em,
+strong {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h4,
+p {
+  margin-bottom: 22px;
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+nav li,
+.social li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav li {
+  font-weight: 700;
+}
+
+a:hover {
+  color: #a15a3b;
+}
+
+header,
+main,
+footer {
+  padding: 50px 0;
+  margin: 25px 0;
+}
+
+/*---------------------------
+Grid
+ --------------------------- */
+*,
+*:before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+/*---------------------------
+Header
+ --------------------------- */
+
+/*---------------------------
+Main
+ --------------------------- */
+
+/*---------------------------
+Footer
+ --------------------------- */
+
+.social i {
+  font-size: 3em;
+  color: #252420;
+}
+
+.social i:hover,
+.news article a:hover {
+  color: #a15a3b;
+}
+
+.news article a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6e6d6b;
+}
+
+.bkg {
+  width: 100%;
+  background-color: #c5c3c0;
+  padding: 50px 0;
+  margin: 25px 0;
+}
+
+/*---------------------------
+Key frames
+ --------------------------- */
+.animate-pop-in {
+  animation: pop-in 0.6s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
